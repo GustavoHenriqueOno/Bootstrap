@@ -1,0 +1,16 @@
+:root {
+    --color-blue: #d15a10;
+    --color-pink: #dc143c;
+}
+
+body {
+    font-family: 'Prompt', sans-serif;
+}
+
+.text-blue {
+    color: var(--color-blue);
+}
+
+.text-pink {
+    color: var(--color-pink);
+}
