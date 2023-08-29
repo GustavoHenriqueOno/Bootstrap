@@ -1,0 +1,67 @@
+:root {
+    --color-orange: #DF4931;
+    --color-pink: #dc143c;
+    --font-body:'Prompt',sans-serif;
+    --color-grey-100: #f4f4f4;
+    --gradiente: 45deg,
+                hsl(0deg 100% 32%) 0%,
+                hsl(15deg 100% 35%) 13%,
+                hsl(23deg 100% 39%) 25%,
+                hsl(29deg 100% 41%) 37%,
+                hsl(34deg 100% 44%) 50%,
+                hsl(39deg 100% 46%) 63%,
+                hsl(44deg 100% 48%) 75%,
+                hsl(49deg 100% 49%) 87%,
+                hsl(54deg 100% 52%) 100%;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--color-grey-100);
+}
+
+.text-blue {
+    color: var(--color-orange);
+}
+
+.gradiente {
+    background-image: linear-gradient(var(--gradiente));
+}
+
+.text-pink {
+    color: var(--color-pink);
+}
+
+.logo {
+    font-size: 25px;
+    color: var(--color-orange);
+}
+
+.navbar-toggler {
+    box-shadow: none !important;
+}
+
+.navbar-toggler:focus {
+    border: 1px solid var(--color-pink) !important;
+    color: var(--color-pink);
+}
+
+.nav-link:hover, 
+.logo:hover {
+    color: var(--color-orange);
+}
+
+.height-50 {
+    min-height: 50vh;
+}
+
+.icon-plataforma {
+    font-size: 45px;
+    color: var(--color-orange);
+    margin-right: 30px;
+    transition: .5s;    
+}
+
+.icon-plataforma:hover {
+    color: var(--color-orange);
+}
