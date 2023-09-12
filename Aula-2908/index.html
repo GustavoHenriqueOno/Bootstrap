@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aula 06 - vídeo - carousel - grid</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
+
+
+    <!-- Chamada dos Icones BS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+
+    <!-- Chamada da CSS do BS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <!-- chamada da minha CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
+
+</head>
+
+<body>
+
+    <header class="container mt-4">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+
+                <a class="navbar-brand logo" href="#">
+                    <i class="bi bi-dpad-fill me-2"></i>Joguinhos
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-filter-right"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container mb-5">
+        <!-- definida a linha do grid -->
+        <section class="row px-4 d-flex align-items-center">
+            <div class="col-md-6">
+                <h1 class="display-1 text-purple">1TJDF</h1>
+                <p class="lead my-4">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus qui saepe <span
+                        class="text-pink">rerum mollitia iusto eligendi ex</span> nam illum dolores dignissimos.
+                </p>
+                <a href="" class="btn btn-outline-primary">Mais informações</a>
+            </div>
+
+            <figure class="col-md-6">
+                <img src="./images/gaming-animate.svg" alt="Ilustração de uma pessoa jogando videogame"
+                    class="img-fluid">
+            </figure>
+        </section>
+
+        <!-- cards -->
+        <h4 class="text-purple display-6 mb-4">Personagens</h4>
+
+        <!-- criar a linha do grid -->
+        <section class="row">
+            <!-- 1o. card -->
+            <div class="col-md-6 col-lg-3 my-2">
+                <div class="card">
+                    <img src="./images/personagens/personagem01.jpg" class="card-img-top" alt="Imagem do personagem 01">
+                    <div class="card-body">
+                        <h5 class="card-title">Personagem 01</h5>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, suscipit
+                            pariatur?</p>
+                        <a href="#" class="btn btn-outline-primary">Galeria de Imagens</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2o. card -->
+            <div class="col-md-6 col-lg-3 my-2">
+                <div class="card">
+                    <img src="./images/personagens/personagem02.jpg" class="card-img-top" alt="Imagem do personagem 02">
+                    <div class="card-body">
+                        <h5 class="card-title">Personagem 02</h5>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, suscipit
+                            pariatur?</p>
+                        <a href="#" class="btn btn-outline-primary">Galeria de Imagens</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3o. card -->
+            <div class="col-md-6 col-lg-3 my-2">
+                <div class="card">
+                    <img src="./images/personagens/personagem03.jpg" class="card-img-top" alt="Imagem do personagem 03">
+                    <div class="card-body">
+                        <h5 class="card-title">Personagem 03</h5>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, suscipit
+                            pariatur?</p>
+                        <a href="#" class="btn btn-outline-primary">Galeria de Imagens</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4o. card -->
+            <div class="col-md-6 col-lg-3 my-2">
+                <div class="card">
+                    <img src="./images/personagens/personagem04.jpg" class="card-img-top" alt="Imagem do personagem 04">
+                    <div class="card-body">
+                        <h5 class="card-title">Personagem 04</h5>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, suscipit
+                            pariatur?</p>
+                        <a href="#" class="btn btn-outline-primary">Galeria de Imagens</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- Plataformas -->
+    <article class="container-fluid text-light gradiente mb-5">
+        <div class="container">
+            <!-- ativar a linha do grid -->
+            <div class="row d-flex align-items-center justify-content-center text-center height-50">
+
+                <div class="col-md-6 my-2">
+                    <h3 class="">Compre os mehores games do mundo!!!</h3>
+                    <p class="my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quam vero sit
+                        facere!</p>
+                    <a href="" class="btn btn-outline-primary">Mais informações</a>
+                    <a href="" class="btn btn-primary ms-2">Comprar agora</a>
+                </div>
+
+                <div class="col-md-6 my-2 text-end icons">
+                    <a href=""><i class="bi bi-steam icon-plataforma"></i></a>
+                    <a href=""><i class="bi bi-playstation icon-plataforma"></i></a>
+                    <a href=""><i class="bi bi-xbox icon-plataforma"></i></a>
+                    <a href=""><i class="bi bi-nintendo-switch icon-plataforma"></i></a>
+                </div>
+            </div>
+        </div>
+    </article>
+
+
+    <section class="container mb-5">
+        <h4 class="text-purple display-6">Galeria de imagens</h4>
+        <div class="row my-4 d-flex align-items-center">
+
+            <!-- imagem grande -->
+            <div class="col-md-6 my-2">
+                <img src="./images/telas/tela07.jpg" alt="Imagem da tela do game ABCD" class="img-fluid rounded">
+            </div>
+
+            <!-- imagens pequenas -->
+            <div class="col-md-6 my-2">
+
+                <div class="row">
+                    <div class="col-6 my-2">
+                        <img src="./images/telas/tela07.jpg" alt="Imagem do Game ABCD" class="img-fluid rounded">
+                    </div>
+
+                    <div class="col-6 my-2">
+                        <img src="./images/telas/tela06.jpg" alt="Imagem do Game XCVB" class="img-fluid rounded">
+                    </div>
+
+                    <div class="col-6 my-2">
+                        <img src="./images/telas/tela04.jpg" alt="Imagem do Game OIUY" class="img-fluid rounded">
+                    </div>
+
+                    <div class="col-6 my-2">
+                        <img src="./images/telas/tela05.jpg" alt="Imagem do Game RTYU" class="img-fluid rounded">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- área de vídeos -->
+    <section class="container mb-5">
+        <h4 class="text-purple display-6">vídeos</h4>
+
+        <!-- linha do grid com mais responsabilidades -->
+        <div class="row row-cols-1 row-cols-md-2  row-cols-lg-3">
+            <div class="col my-3">
+                <video src="./videos/videos/animated_medium20200707-5341-1dbefzo.mp4" controls loop
+                    class="ratio ratio-16x9 rounded"></video>
+            </div>
+
+            <div class="col my-3">
+                <video src="./videos/videos/animated_medium20200725-20674-vo69tc.mp4" controls
+                    class="ratio ratio-16x9 rounded"></video>
+            </div>
+
+            <div class="col my-3">
+                <video src="./videos/videos/animated_medium20200730-3261-balfec.mp4" controls
+                    class="ratio ratio-16x9 rounded"></video>
+            </div>
+
+            <div class="col my-3">
+                <video src="./videos/videos/animated_medium20200817-4291-1flkvcz.mp4" controls
+                    class="ratio ratio-16x9 rounded"></video>
+            </div>
+
+            <div class="col my-3">
+                <video src="./videos/videos/animated_medium20210310-30959-bv00ij.mp4" controls
+                    class="ratio ratio-16x9 rounded"></video>
+            </div>
+
+            <div class="col my-3">
+                <video src="./videos/videos/animated_medium20210614-7172-jz7acx.mp4" controls
+                    class="ratio ratio-16x9 rounded"></video>
+            </div>
+        </div>
+    </section>
+
+    <!-- carousel Bootstrap -->
+    <section class="container mb-5">
+        <h4 class="text-purple display-6">Veja mais joguinhos</h4>
+
+        <div class="row row-cols-1 row-cols-md-2 my-3 d-flex align-items-center">
+            <div class="col">
+                <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                            aria-label="Slide 5"></button>
+                    </div>
+                    <div class="carousel-inner rounded">
+                        <div class="carousel-item active" data-bs-ride="carousel">
+                            <img src="./images/telas/tela01.jpg" class="d-block w-100"
+                                alt="Personagem verde andando na cidade">
+                        </div>
+                        <div class="carousel-item" data-bs-ride="carousel">
+                            <img src="./images/telas/tela02.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-ride="carousel">
+                            <img src="./images/telas/tela03.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-ride="carousel">
+                            <img src="./images/telas/tela04.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-ride="carousel">
+                            <img src="./images/telas/tela05.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- vídeo do YouTube -->
+            <div class="col my-3">
+                <div class="ratio ratio-4x3">
+                    <iframe src="https://www.youtube.com/embed/diilMn5gSAg?si=Msc_fhgn6t-Cren8" class="rounded" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Chamada do JS do BS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>

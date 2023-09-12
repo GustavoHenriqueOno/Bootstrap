@@ -1,0 +1,67 @@
+:root {
+    --color-purple: #A75EB4;
+    --color-pink: #dc143c;
+    --color-grey-100: #f4f4f4;
+    --font-body: 'Quicksand', sans-serif;
+    --gradiente: 75deg,
+        hsl(240deg 100% 14%) 0%,
+        hsl(243deg 94% 13%) 13%,
+        hsl(247deg 91% 13%) 25%,
+        hsl(250deg 87% 12%) 37%,
+        hsl(254deg 82% 11%) 50%,
+        hsl(257deg 78% 11%) 63%,
+        hsl(261deg 73% 10%) 75%,
+        hsl(264deg 67% 9%) 87%,
+        hsl(268deg 64% 9%) 100%;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--color-grey-100);
+}
+
+.text-purple {
+    color: var(--color-purple);
+}
+
+.gradiente {
+    background-image: linear-gradient(var(--gradiente));
+}
+
+.text-pink {
+    color: var(--color-pink);
+}
+
+.logo {
+    font-size: 25px;
+    color: var(--color-purple)
+}
+
+.navbar-toggler {
+    box-shadow: none !important;
+}
+
+.navbar-toggler:focus {
+    border: 1px solid var(--color-purple) !important;
+    color: var(--color-purple);
+}
+
+.nav-link:hover,
+.logo:hover {
+    color: var(--color-purple);
+}
+
+.height-50 {
+    min-height: 50vh;
+}
+
+.icon-plataforma {
+    font-size: 45px;
+    color: var(--color-grey-100);
+    margin-right: 30px;
+    transition: .5s;
+}
+
+.icon-plataforma:hover {
+    color: var(--color-purple);    
+}
