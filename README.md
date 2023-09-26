@@ -1,2 +1,2 @@
 # User Experience  Developer - FIAP
-Usamos HTML, CSS E Javascript além de usarmos o framework bootstrap
+Usamos HTML, CSS e Javascript além de usarmos o framework bootstrap
